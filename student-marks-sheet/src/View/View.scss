@@ -1,0 +1,44 @@
+.header {
+  margin: 0px auto;
+  &_one {
+    background-color: blue;
+    height: 40px;
+    padding: 18px;
+  }
+  .edit {
+    padding: 10px;
+    padding-bottom: -2px;
+  }
+  .vw {
+    padding: 10px;
+  }
+  .delete {
+    padding: 10px;
+  }
+  .addbtn {
+    background-color: #FFFFFF;
+    margin: 10px;
+    margin-left: 1550px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 90px;
+    height: 40px;
+    border-radius: 1ch;
+    font-size: 17px;
+    border-color: #396CC5;
+  }
+}
+.table {
+  
+  text-align: center;
+  align-items: center;
+  margin: 60px;
+  margin-top: 10px;
+  margin-left: 180px;
+  font-size: 50px;
+  box-shadow: 2px 2px 2px 2px #00000029;
+  border-radius: 16px;
+  opacity: 1;
+  width: 80%;
+  background-color: #8A82821C;
+}
