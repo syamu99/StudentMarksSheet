@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import './viewitem.scss'
+import {Link} from "react-router-dom"
 
 
 const ViewItem = () => {
@@ -43,8 +44,10 @@ const ViewItem = () => {
   }
 
     <div>
-      <button className="databox__viewpage"> Back to View</button></div>
-      
+      <Link className="button" to="/View">
+      <button className="databox__viewpage"> Back to View</button>
+      </Link>
+    </div>
   </div>
 
   );
