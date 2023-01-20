@@ -123,7 +123,7 @@ const StudentMarksForm = () => {
       </div>
 
       <div className="form">
-        <div className="form_content">
+        <div className="form__content">
           <h1>Create Student Marks Profile</h1>
             <hr/>
             <FormProvider {...StudentMarksFormMethods}>
@@ -132,7 +132,7 @@ const StudentMarksForm = () => {
                 StudentMarksFormSubmit
               )}
             >
-              <div className="container">
+              <div className="form__container">
                 {STUDENT_MARKS_FORM?.map((rows: any) => {
                   return (
                     <div className={`row ${rows.className}`}>
@@ -145,7 +145,7 @@ const StudentMarksForm = () => {
                 })}
               </div>
               <div className="line2"><hr/></div>
-              <div className="form_footer">
+              <div className="form__footer">
                 <PrimaryButton  className="pmBtn"
                   type="submit"
                   onClick={StudentMarksFormMethods.handleSubmit(

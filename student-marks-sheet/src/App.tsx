@@ -10,10 +10,7 @@ function App() {
   return (
     <>
     <BrowserRouter>
-      {/* <div className='navigation'>
-        <Link className='btn' to = "View" >View</Link>
-                  
-      </div> */}
+      
       <Routes>
           <Route path="/" element={<View />} />
           <Route path="/View" element={<View />} />

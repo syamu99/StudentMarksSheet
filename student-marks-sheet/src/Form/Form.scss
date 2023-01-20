@@ -1,61 +1,60 @@
+$bgcolor:red;
+
+
 .form {
-  
-    background-color: rgb(243, 238, 238);
-    height: 120vh;
 
-      .form-main-content {
+        
+          background-color: rgb(243, 238, 238);
+          height: 120vh;
+          
+          &__h1 {
+                margin-top: -20px;
+               }
 
-          background-color: grey;
-          font-size: 10px;
-      }
-      h1 {
-          margin-top: -20px;
-        }
+          &__content {
+                margin-top: 80px;
+                margin-left: 260px;
+                width: 1000px;
+                height: auto;
+                padding: 50px;
 
-    &_content {
-    margin-top: 80px;
-    margin-left: 260px;
-    width: 1000px;
-    height: auto;
-    padding: 50px;
+                /* UI Properties */
+                background: #ffffff 0% 0% no-repeat padding-box;
+                box-shadow: 0px 3px 6px #00000029;
+                border-radius: 16px;
+                border: 1px solid rgb(228, 226, 226);
+                opacity: 1;
+          }
 
-    /* UI Properties */
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 16px;
-    border: 1px solid rgb(228, 226, 226);
-    opacity: 1;
-  }
-  .container {
-    gap: 10px;
-    margin-top: 30px;
-    margin-bottom: 50px;
+          &_container {
+                gap: 10px;
+                margin-top: 30px;
+                margin-bottom: 50px;
 
-    .row {
-      flex-flow: wrap;
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-    }
-  }
-  .line1 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  &_footer {
-    padding-top: 1rem;
-    margin-left: 50px;
-    margin-top: 15px;
-    margin-bottom: -15px;
-    padding-top: 20px;
-    border-radius: 2rem;
-  }
-  .pmBtn {
-    width: 90px;
-    height: 45px;
-    border-radius: 5px;
-  }
-  
+            .row {
+              flex-flow: wrap;
+              display: grid;
+              gap: 1rem;
+              grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+            }
+          }
+
+          .line1 {
+              margin-top: 20px;
+              margin-bottom: 20px;
+            }
+
+          &__footer {
+            padding-top: 1rem;
+            margin-left: 50px;
+            margin-top: 15px;
+            margin-bottom: -15px;
+            padding-top: 20px;
+            border-radius: 2rem;
+          }
+          .pmBtn {
+            width: 90px;
+            height: 45px;
+            border-radius: 5px;
+          }
 }
-
-

@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import './viewitem.scss'
+
 
 const ViewItem = () => {
   const [data, setData] = useState<any>();
@@ -23,7 +25,31 @@ const ViewItem = () => {
     getData(id);
   }, [id]);
 
-  return (<div>{data && <h1>{data.Studentname}, {data.English}, {data.Telugu}, {data.Hindi}, {data.Maths}, {data.Science}{data.Social}{data.totalmarks}</h1>}</div>);
-};
+  return (
+  <div className="databox"> 
+    {data && 
+  <>
+  <h2>Student Name: {data.Studentname}</h2>
+  <p>Roll Number: {data.Rollnumber} </p>
+  <p>English Marks: {data.English}</p>
+  <p>Telugu Marks: {data.Telugu}</p>
+  <p>Hindi Marks: {data.Hindi}</p> 
+  <p>Maths Marks: {data.Maths}</p> 
+  <p>Science Marks: {data.Science}</p>
+  <p>Social Marks: {data.Social}</p>
+  <p>Total Marks: {data.totalmarks}</p>
+  </>
+  
+  }
+
+    <div>
+      <button className="databox__viewpage"> Back to View</button></div>
+      
+  </div>
+
+  );
+}
+
+
 
 export default ViewItem;
