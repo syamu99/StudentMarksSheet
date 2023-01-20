@@ -14,28 +14,29 @@ import "./Form.scss";
 const StudentMarksForm = () => {
   interface IStudentMarksData {
     Studentname?: string;
-    rollnumber?: number;
-    english?: number;
-    telugu?: number;
-    hindi?: number;
-    maths?: number;
-    science?: number;
-    social?: number;
-    extraactivities?: string;
+    Rollnumber?: number;
+    English?: number;
+    Telugu?: number;
+    Hindi?: number;
+    Maths?: number;
+    Science?: number;
+    Social?: number;
+    Totalmarks?: number;
+    ExtraActivities?: string;
   }
 
   //Schema Declaration
   const StudentSchema: yup.SchemaOf<IStudentMarksData> = yup.object().shape({
     Studentname: yup.string().min(5).max(15),
-    rollnumber: yup.number(),
-    english: yup.number().positive().integer().max(100),
-    telugu: yup.number().min(2).max(100),
-    hindi: yup.number().min(2).max(100),
-    maths: yup.number().min(2).max(100),
-    science: yup.number().min(2).max(100),
-    social: yup.number().min(2).max(100),
-    extraactivities: yup.string(),
-    totalmarks: yup.number(),
+    Rollnumber: yup.number(),
+    English: yup.number().required().positive().integer().max(100),
+    Telugu: yup.number().required().positive().integer().max(100),
+    Hindi: yup.number().required().positive().integer().max(100),
+    Maths: yup.number().required().positive().integer().max(100),
+    Science: yup.number().required().positive().integer().max(100),
+    Social: yup.number().required().positive().integer().max(100),
+    ExtraActivities: yup.string(),
+    Totalmarks: yup.number(),
   });
   const StudentMarksFormMethods = useForm<any>({
     mode: "all",
@@ -87,9 +88,9 @@ const StudentMarksForm = () => {
     }
   };
 
-  const createStudentForm = async (editData: any) => {
+  const createStudentForm = async (creData: any) => {
     const generateNumber: any = Math.random();
-    const newData = { ...editData, id: generateNumber };
+    const newData = { ...creData, id: generateNumber };
 
     try {
       const result = await axios.post(`http://localhost:5000/data`, newData);
@@ -123,11 +124,11 @@ const StudentMarksForm = () => {
 
       <div className="form">
         <div className="form_content">
-        <h1>Create Student Marks Profile</h1>
-          <hr/>
-          <FormProvider {...StudentMarksFormMethods}>
-            <form
-              onSubmit={StudentMarksFormMethods.handleSubmit(
+          <h1>Create Student Marks Profile</h1>
+            <hr/>
+            <FormProvider {...StudentMarksFormMethods}>
+              <form
+               onSubmit={StudentMarksFormMethods.handleSubmit(
                 StudentMarksFormSubmit
               )}
             >

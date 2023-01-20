@@ -22,7 +22,7 @@ export const STUDENT_MARKS_FORM = [
         typeOf: "number",
         label: "Roll Number",
         placeholder: "Enter Rollno",
-        // isRequired: true,
+        isRequired: false,
       },
     ],
   },
@@ -36,7 +36,7 @@ export const STUDENT_MARKS_FORM = [
         label: "English",
         typeOf: "number",
         placeholder: "Enter marks",
-        isRequired: true,
+        isRequired: false,
       },
       {
         type: "TextFieldForm",
@@ -44,7 +44,7 @@ export const STUDENT_MARKS_FORM = [
         label: "Telugu",
         placeholder: "Enter marks",
         typeOf: "number",
-        isRequired: true,
+        isRequired: false,
       },
       {
         type: "TextFieldForm",
@@ -52,7 +52,7 @@ export const STUDENT_MARKS_FORM = [
         label: "Hindi",
         placeholder: "Enter marks",
         typeOf: "number",
-        isRequired: true,
+        isRequired: false,
       },
       {
         type: "TextFieldForm",
@@ -60,7 +60,7 @@ export const STUDENT_MARKS_FORM = [
         label: "Maths",
         placeholder: "Enter marks",
         typeOf: "number",
-        isRequired: true,
+        isRequired: false,
       },
       {
         type: "TextFieldForm",
@@ -68,7 +68,7 @@ export const STUDENT_MARKS_FORM = [
         label: "Science",
         placeholder: "Enter marks",
         typeOf: "number",
-        isRequired: true,
+        isRequired: false,
       },
       {
         type: "TextFieldForm",
@@ -76,7 +76,7 @@ export const STUDENT_MARKS_FORM = [
         label: "Social",
         placeholder: "Enter marks",
         typeOf: "number",
-        isRequired: true,
+        isRequired: false,
       },
       {
         type: "TextFieldForm",
@@ -84,7 +84,7 @@ export const STUDENT_MARKS_FORM = [
         label: "Total Marks",
         placeholder: "Enter Total marks",
         typeOf: "number",
-        isRequired: true,
+        isRequired: false,
       },
       {
         type: "DropdownForm",

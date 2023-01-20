@@ -23,7 +23,7 @@ const ViewItem = () => {
     getData(id);
   }, [id]);
 
-  return (<div>{data && <h1>{data.Studentname}</h1>}</div>);
+  return (<div>{data && <h1>{data.Studentname}, {data.English}, {data.Telugu}, {data.Hindi}, {data.Maths}, {data.Science}{data.Social}{data.totalmarks}</h1>}</div>);
 };
 
 export default ViewItem;
